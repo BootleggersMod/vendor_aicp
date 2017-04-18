@@ -21,9 +21,7 @@ PRODUCT_PACKAGES += \
 # Custom CM packages
 PRODUCT_PACKAGES += \
     AudioFX \
-    CMFileManager \
     CMSettingsProvider \
-    Eleven \
     ExactCalculator \
     LiveLockScreenService \
     LockClock \
@@ -37,7 +35,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AicpExtras \
     BasicDreams \
-    Browser2 \
     LatinImeDictionaryPack \
     LatinIME \
     librs_jni \
@@ -47,7 +44,6 @@ PRODUCT_PACKAGES += \
     PhotoPhase \
     procmem \
     procrank \
-    Torch \
     VisualizationWallpapers
 
 # Conditionally build in su

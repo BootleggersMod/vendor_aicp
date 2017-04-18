@@ -150,3 +150,5 @@ ifneq ($(AICP_BUILDTYPE),UNOFFICIAL)
 PRODUCT_PACKAGES +=  \
    AICP_OTA
 endif
+
+-include vendor/bootleggers/booty.mk

@@ -15,7 +15,7 @@ ifndef AICP_BUILDTYPE
         RELEASE_TYPE := $(shell echo $(RELEASE_TYPE) | sed -e 's|^AICP_||g')
         AICP_BUILDTYPE := $(RELEASE_TYPE)
     else
-        AICP_BUILDTYPE := UNOFFICIAL
+        AICP_BUILDTYPE := SHISHU
     endif
 endif
 
@@ -29,12 +29,12 @@ ifdef AICP_BUILDTYPE
     ifeq ($(AICP_BUILDTYPE), EXPERIMENTAL)
         AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)-$(VERSION)-EXPERIMENTAL-$(shell date -u +%Y%m%d)
     endif
-    ifeq ($(AICP_BUILDTYPE), UNOFFICIAL)
-        AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)-$(VERSION)-UNOFFICIAL-$(shell date -u +%Y%m%d)
+    ifeq ($(AICP_BUILDTYPE), SHISHU)
+        AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)-$(VERSION)-SHISHU-$(shell date -u +%Y%m%d)
     endif
 else
-#We reset back to UNOFFICIAL
-        AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)-$(VERSION)-UNOFFICIAL-$(shell date -u +%Y%m%d)
+#We reset back to SHISHU
+        AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)-$(VERSION)-SHISHU-$(shell date -u +%Y%m%d)
 endif
 
 
